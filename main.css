@@ -1,0 +1,273 @@
+body{
+	margin:zero;
+}
+.site{
+	width:100vw;
+	color:green;
+    font-family:sans-serif;
+	height:auto;
+	display:grid;
+	grid-template-rows:repeat(auto,5);
+	place-items:center;
+	grid-template-columns:1fr;
+	grid-template-areas:"nav"
+	                    "personal"
+	                    "details"
+						"portfolio"
+						"pictures";
+	grid-gap:5vh;
+}
+nav{
+	width:90vw;
+	height:auto;
+	border:1px solid mint;
+    box-shadow:3px 3px 3px 3px gainsboro;
+	text-align:center;
+	position:sticky;
+}
+nav a{
+	text-decoration:none;
+	color:green;
+}
+nav a:hover{
+	color:darkgray;
+}
+nav li{
+	text-decoration:none;
+	display:inline;
+	padding-left:5vw;
+}
+#personal{
+	width:90vw;
+	height:auto;
+	border:1px solid mint;
+    box-shadow:3px 3px 3px 3px gainsboro;	
+    display:grid;
+	border-radius:5px;
+	place-items:center;
+    grid-area:"personal"; 
+    grid-template-columns:1fr;
+    grid-template-rows:100px 1fr;
+    grid-template-areas:"pics"
+                        "p-details";	
+}
+#passport{
+	grid-area:"pics";
+	width:80px;
+	height:80px;
+	border:1px solid green;
+	border-radius:50%;
+	background-image:url("IMG_20210801_114045~3[1].jpg");
+	background-position:center;
+	background-size:cover;
+}
+#p-detail{
+	grid-area:"p-details";
+	width:90vw;
+	overflow:none;
+	height:auto;
+	text-align:center;
+}
+#p-detail ul{
+	width:70vw;
+	height:auto;
+	margin-top:2vh;
+	font-size:1em;
+}
+#p-detail li{
+	text-decoration:none;
+	display:block;
+}
+
+
+#details{
+	width:90vw;
+	height:auto;	
+    display:grid;
+    grid-area:"details"; 
+	border-radius:5px;
+    box-shadow:3px 3px 3px 3px gainsboro;
+	
+    grid-template-columns:1fr;
+    grid-template-rows:repeat(auto,);
+    grid-template-areas:"skills"
+                        "experience"
+						"education"
+						"certification";	
+}
+#skill{
+	grid-area:"skills";
+	width:90vw;
+	height:auto;
+	display:grid;
+	place-items:center;
+}
+
+#experience{
+	grid-area:"experience";
+	width:90vw;
+	height:auto;
+	display:grid;
+	place-items:center;
+}
+#education{
+	grid-area:"education";
+	width:90vw;
+	height:auto;
+	display:grid;
+	place-items:center;
+}
+#certification{
+	grid-area:"certification";
+	width:90vw;
+	height:auto;
+	display:grid;
+	place-items:center;
+}
+#portfolio{
+	width:90vw;
+	height:auto;
+	border:1px solid mint;
+    box-shadow:3px 3px 3px 3px gainsboro;	
+    display:grid;
+	border-radius:5px;
+
+	grid-template-columns:1fr;
+	grid-template-rows:auto auto auto;
+	grid-template-areas:"title"
+	                    "p-pics"
+						"p-word";	place-items:center;
+    grid-area:"portfolio"; 	
+	
+}
+#p-site{
+	grid-area:"p-pics";
+	width:50vw;
+	height:30vh;
+	border-radius:5px;
+	border:1px solid green;
+	background-image:url("IMG_20210806_070518[1].jpg");
+	background-position:center;
+	background-size:cover;
+}
+#portfolio p{
+	grid-area:"title";
+}
+#p-word{
+	grid-area:"p-word";
+}
+#p-word a{
+	text-decoration:none;
+	color:green;
+}
+
+#pictures{
+	width:90vw;
+	height:auto;
+	border:1px solid mint;
+	border-radius:5px;
+    box-shadow:3px 3px 3px 3px gainsboro;	
+    grid-area:"pictures";
+    display:grid;
+    grid-template-columns:1fr;
+grid-template-rows:auto auto;
+grid-template-areas:"title"
+                    "body";	
+   	
+}
+#pictures p{
+	grid-area:"title";
+	text-align:center;
+}
+.pics{
+	width:90vw;
+	height:auto;
+	grid-area:"body";
+	place-items:center;
+	 display:grid;
+    grid-template-columns:repeat(2,1fr);
+grid-template-rows:repeat(2,1fr);
+grid-gap:2vh;
+grid-template-areas:"1 2"
+                    "3 4";
+}
+
+#pic-1{
+	grid-area:"1";
+	width:30vw;height:30vh;
+	border:1px solid green;
+	box-shadow:3px 3px 3px 0px gainboro;
+	margin-bottom:2vh;
+	background-image:url("IMG_20210218_104822_413.jpg");
+	background-position:center;
+	background-size:cover;
+}
+#pic-2{
+	grid-area:"2";
+	width:30vw;height:30vh;
+	border:1px solid green;
+	box-shadow:3px 3px 3px 0px gainboro;
+	margin-bottom:2vh;
+	background-image:url("IMG_20210218_104749_477.jpg");
+	background-position:center;
+	background-size:cover;
+}
+#pic-3{
+	grid-area:"3";
+	width:30vw;height:30vh;
+	border:1px solid green;
+	box-shadow:3px 3px 3px 0px gainboro;
+	margin-bottom:2vh;
+	background-image:url("IMG_20210218_104745_593.jpg");
+	background-position:center;
+	background-size:cover;
+}
+#pic-4{
+	grid-area:"4";border:1px solid green;
+	width:30vw;height:30vh;
+	box-shadow:3px 3px 3px 0px gainboro;
+	margin-bottom:2vh;
+	background-image:url("IMG_20210218_104524_206.jpg");
+	background-position:center;
+	background-size:cover;
+}
+@media only screen and (min-width:768px){
+	#personal{
+		display:flex;
+		flex:columns no-wrap;
+		justify-content:center;
+	}
+	#passport{
+		order:1;
+		margin-left:10vw;
+	}
+	#p-detail{
+		order:2;
+		text-align:left;
+	}
+	#details{
+		display:flex;
+		width:90vw;
+		flex:columns no-wrap;
+		justify-content:space-evenly;
+	}
+	#skill{
+		width:30vw;
+		order:1;
+	}
+	#skill ul{
+		width:25vw;
+	}
+	#experience{
+		width:30vw;
+		order:3;
+	}
+	#certification{
+		width:30vw;
+		order:4;
+	}
+	#education{
+		width:30vw;
+		order:2;
+	}
+}
