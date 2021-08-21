@@ -7,14 +7,14 @@ body{
     font-family:sans-serif;
 	height:auto;
 	display:grid;
-	grid-template-rows:repeat(auto,5);
+	grid-template-rows:repeat(auto,4);
 	place-items:center;
 	grid-template-columns:1fr;
 	grid-template-areas:"nav"
 	                    "personal"
 	                    "details"
-						"portfolio"
-						"pictures";
+						"portfolio";
+					
 	grid-gap:5vh;
 }
 nav{
@@ -161,76 +161,8 @@ nav li{
 	color:green;
 }
 
-#pictures{
-	width:90vw;
-	height:auto;
-	border:1px solid mint;
-	border-radius:5px;
-    box-shadow:3px 3px 3px 3px gainsboro;	
-    grid-area:"pictures";
-    display:grid;
-    grid-template-columns:1fr;
-grid-template-rows:auto auto;
-grid-template-areas:"title"
-                    "body";	
-   	
-}
-#pictures p{
-	grid-area:"title";
-	text-align:center;
-}
-.pics{
-	width:90vw;
-	height:auto;
-	grid-area:"body";
-	place-items:center;
-	 display:grid;
-    grid-template-columns:repeat(2,1fr);
-grid-template-rows:repeat(2,1fr);
-grid-gap:2vh;
-grid-template-areas:"1 2"
-                    "3 4";
-}
 
-#pic-1{
-	grid-area:"1";
-	width:30vw;height:30vh;
-	border:1px solid green;
-	box-shadow:3px 3px 3px 0px gainboro;
-	margin-bottom:2vh;
-	background-image:url("IMG_20210218_104822_413.jpg");
-	background-position:center;
-	background-size:cover;
-}
-#pic-2{
-	grid-area:"2";
-	width:30vw;height:30vh;
-	border:1px solid green;
-	box-shadow:3px 3px 3px 0px gainboro;
-	margin-bottom:2vh;
-	background-image:url("IMG_20210218_104749_477.jpg");
-	background-position:center;
-	background-size:cover;
-}
-#pic-3{
-	grid-area:"3";
-	width:30vw;height:30vh;
-	border:1px solid green;
-	box-shadow:3px 3px 3px 0px gainboro;
-	margin-bottom:2vh;
-	background-image:url("IMG_20210218_104745_593.jpg");
-	background-position:center;
-	background-size:cover;
-}
-#pic-4{
-	grid-area:"4";border:1px solid green;
-	width:30vw;height:30vh;
-	box-shadow:3px 3px 3px 0px gainboro;
-	margin-bottom:2vh;
-	background-image:url("IMG_20210218_104524_206.jpg");
-	background-position:center;
-	background-size:cover;
-}
+
 @media only screen and (min-width:768px){
 	#personal{
 		display:flex;
